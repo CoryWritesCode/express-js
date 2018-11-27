@@ -1,0 +1,14 @@
+{
+  "name": "express-covalence",
+  "version": "1.0.0",
+  "description": "ExpressJS Lab for Covalence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cory Cunningham",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
