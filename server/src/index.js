@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/form', (req, res) => {
 
-  let formPath = path.join(__dirname, './formsubmissions/forms.json');
+  let formPath = path.join(__dirname, '../formsubmissions/forms.json');
   let name = req.body.name;
   let email = req.body.email;
 
