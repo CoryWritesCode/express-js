@@ -19,8 +19,11 @@ app.post('/form', (req, res) => {
 
     var json = JSON.parse(data);
 
-    json[`name${i}`] = `${name}`;
-    json[`email${i}`] = `${email}`;
+    json.users.push({
+      key: `${i}`,
+      name: `${name}`,
+      email: `${email}`
+    })
 
     fs.writeFile(formPath, JSON.stringify(json), (err) => {
       if (err) throw err;
